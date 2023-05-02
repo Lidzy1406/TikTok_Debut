@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tiktok_clone/login/authentication/authentication.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -21,6 +22,10 @@ class _HomePage extends State<HomePage> {
             fontSize: 22.5,
           ),
         ),
+        leading: IconButton(onPressed: () {
+          AuthenticationRepository.instance.logout();
+        },
+        icon: Icon(Icons.person_outline_outlined),),
         actions: [
           IconButton(
             icon: Icon(
