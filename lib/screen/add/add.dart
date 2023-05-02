@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:video_player/video_player.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 
 class VideoPickerScreen extends StatefulWidget {
   const VideoPickerScreen ({super.key});
@@ -38,7 +39,6 @@ class _VideoPickerScreenState extends State<VideoPickerScreen> {
       _videoPlayerController!.play();
     }
   }
-
   @override
   void dispose() {
     super.dispose();
@@ -48,9 +48,12 @@ class _VideoPickerScreenState extends State<VideoPickerScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
+
       appBar: AppBar(
         title: Text('add videos'),
         backgroundColor: Color.fromARGB(255, 49, 48, 48),
+        
       ),
       body: Center(
         child: Column(
@@ -61,18 +64,29 @@ class _VideoPickerScreenState extends State<VideoPickerScreen> {
                 aspectRatio: _videoPlayerController!.value.aspectRatio,
                 child: VideoPlayer(_videoPlayerController!),
               ),
+              
             Row(
                mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 FloatingActionButton(
+                  backgroundColor:Colors.black,
                   onPressed: _pickVideoFromGallery,
                   child: Icon(Icons.video_library),
+                 
                 ),
                 FloatingActionButton(
+                  backgroundColor:Colors.black,
                   onPressed: _pickVideoFromCamera,
                   child: Icon(Icons.camera_alt),
                 ),
+                 FloatingActionButton(
+                  backgroundColor:Colors.black,
+                  onPressed: _pickVideoFromCamera,
+                  child:  Icon( Icons.category_outlined,), 
+                  
+                 ),
               ],
+              
             ),
           ],
         ),

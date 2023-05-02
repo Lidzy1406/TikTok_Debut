@@ -8,7 +8,7 @@ import 'profil/profil.dart';
 
 const _kPages = <String, Widget>{
   'home': HomePage(),
-  'add ':VideoPickerScreen (),
+  'add ':VideoPickerScreen(),
   'profil': ProfilPage(),
 };
 
@@ -44,11 +44,11 @@ class _BarPage extends State<BarPage> {
           backgroundColor: Color.fromARGB(255, 17, 17, 17),
           items: const <TabItem>[
             TabItem(icon: Icon(Icons.house_outlined,color: Colors.white,), title: 'Home'),
-            TabItem(icon: Icon(Icons.add_circle_outline, color: Color.fromARGB(255, 10, 130, 241)), title: ' add'),
+            TabItem(icon: Icon(Icons.add_circle_outline, color: Colors.white), title: ' add'),
             TabItem(icon: Icon(Icons.account_circle_outlined, color: Colors.white,), title: 'Profil'),
           ],
           color: Color.fromARGB(255, 253, 250, 250),
-          activeColor: Color.fromARGB(255, 6, 226, 208),
+          activeColor: Colors.yellow[600],
           onTap: (int i) => print('click index=$i'),
         ),
       ),
