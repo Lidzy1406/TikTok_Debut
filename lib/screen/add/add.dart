@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class  AddPage extends StatefulWidget {
-  const AddPage({super.key});
+class  HomePage extends StatefulWidget {
+  const HomePage({super.key});
 
   @override
-  State<AddPage> createState() => _AddPageState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _AddPageState extends State<AddPage> {
+class _HomePageState extends State<HomePage> {
   Color mainColor = Color.fromARGB(255, 49, 48, 48);
   @override
   Widget build(BuildContext context) {
