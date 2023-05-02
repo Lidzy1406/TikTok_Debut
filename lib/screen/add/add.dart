@@ -15,7 +15,7 @@ class _VideoPickerScreenState extends State<VideoPickerScreen> {
   VideoPlayerController? _videoPlayerController;
   File? _videoFile;
   final picker = ImagePicker();
-
+  String? _selectedLanguage;
   Future<void> _pickVideoFromGallery() async {
     final pickedFile = await picker.getVideo(source: ImageSource.gallery);
     if (pickedFile != null) {
@@ -65,6 +65,38 @@ class _VideoPickerScreenState extends State<VideoPickerScreen> {
                 child: VideoPlayer(_videoPlayerController!),
               ),
               
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
+              child: DropdownButtonFormField(
+                decoration: const InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: "categorie de video"),
+                value: _selectedLanguage,
+                onChanged: (newValue) {
+                  setState(() {
+                    _selectedLanguage = newValue;
+                  });
+                },
+                items: [
+                  DropdownMenuItem(
+                    value: "lu",
+                    child: Text("Ludique"),
+                  ),
+                  DropdownMenuItem(
+                    value: "sc",
+                    child: Text("Scolaire"),
+                  ),
+                  DropdownMenuItem(
+                    value: "mo",
+                    child: Text("motivation"),
+                  ),
+                  DropdownMenuItem(
+                    value: "co",
+                    child: Text("Comedie"),
+                  ),
+                ],
+              ),
+            ),
             Row(
                mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
