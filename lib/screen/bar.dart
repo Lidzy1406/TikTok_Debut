@@ -8,8 +8,8 @@ import 'home/home.dart';
 import 'profil/profil_screen.dart';
 
 const _kPages = <String, Widget>{
-  'home': HomePage(),
-  ' ': AddPage(),
+  'home': AddPage(),
+  ' ': HomePage(),
   'profil': ProfilPage(),
 };
 

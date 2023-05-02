@@ -18,13 +18,12 @@ class SignUpController extends GetxController {
 
   // call this function from Design
   void registerUser(String email, String password) {
-    String? error = AuthenticationRepository.instance
-        .createUserWithEmailAndPassword(email, password) as String;
-    if (error != null) {
-      Get.showSnackbar(GetSnackBar(
-        message: error.toString(),
-      ));
-    }
+   AuthenticationRepository.instance.createUserWithEmailAndPassword(email, password);
+    // if (error != null) {
+    //   Get.showSnackbar(GetSnackBar(
+    //     message: error.toString(),
+    //   ));
+    // }
   }
 
   Future<void> createUser(UserModel user) async {

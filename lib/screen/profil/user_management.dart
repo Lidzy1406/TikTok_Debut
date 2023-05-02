@@ -9,8 +9,8 @@ import '../../login/constants/image_strings.dart';
 import '../../login/constants/sizes.dart';
 import 'model/user_model.dart';
 
-class UpdateProfileScreen extends StatelessWidget {
-  const UpdateProfileScreen({Key? key}) : super(key: key);
+class UserManagement extends StatelessWidget {
+  const UserManagement ({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

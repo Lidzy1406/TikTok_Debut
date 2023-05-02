@@ -7,6 +7,7 @@ import 'package:tiktok_clone/login/constants/sizes.dart';
 import 'package:tiktok_clone/login/constants/text_strings.dart';
 import 'package:tiktok_clone/login/screens/welcome_screen.dart';
 import 'package:tiktok_clone/screen/profil/update_profile_screen.dart';
+import 'package:tiktok_clone/screen/profil/user_management.dart';
 import 'package:tiktok_clone/screen/profil/widgets/Profil_menu.dart';
 
 import '../../login/authentication/authentication.dart';
@@ -66,17 +67,17 @@ class ProfilPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 10),
-              Text(
-                tProfileHeading,
-                style: Theme.of(context).textTheme.displayMedium,
-              ),
-              Text(
-                tProfileSubHeading,
-                style: Theme.of(context).textTheme.bodyLarge,
-              ),
-              const SizedBox(
-                height: 20,
-              ),
+              // Text(
+              //   tProfileHeading,
+              //   style: Theme.of(context).textTheme.displayMedium,
+              // ),
+              // Text(
+              //   tProfileSubHeading,
+              //   style: Theme.of(context).textTheme.bodyLarge,
+              // ),
+              // const SizedBox(
+              //   height: 20,
+              // ),
               SizedBox(
                 width: 200,
                 child: ElevatedButton(
@@ -107,7 +108,10 @@ class ProfilPage extends StatelessWidget {
               ProfileMenuWidget(
                 title: "User Management",
                 icon: LineAwesomeIcons.user_check,
-                onPress: () {},
+                onPress: () {
+                  print("User Management pressed!");
+                   Get.to(() =>  UserManagement());
+                  },
               ),
               const Divider(
                 color: Colors.grey,
@@ -115,10 +119,10 @@ class ProfilPage extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              ProfileMenuWidget(
-                  title: "informations",
-                  icon: LineAwesomeIcons.info,
-                  onPress: () {}),
+              // ProfileMenuWidget(
+              //     title: "informations",
+              //     icon: LineAwesomeIcons.info,
+              //     onPress: (){}),
               ProfileMenuWidget(
                   title: "Logout",
                   icon: LineAwesomeIcons.alternate_sign_out,

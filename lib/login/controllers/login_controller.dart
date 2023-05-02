@@ -11,10 +11,29 @@ class LoginController extends GetxController {
 
   // call this function from Design
   void loginUser(String email, String password) {
-    String? error = AuthenticationRepository.instance.loginUserWithEmailAndPassword(email, password) as String;
-    if (error != null) {
-      Get.showSnackbar(GetSnackBar(message: error.toString(),
-      ));
-    }
-  }
+  AuthenticationRepository.instance
+    .loginUserWithEmailAndPassword(email, password)
+    .then((user) {
+      // Handle successful login
+    })
+    .catchError((error) {
+      // Handle login error
+      Get.showSnackbar(GetSnackBar(message: error.toString()));
+    });
 }
+}
+// void loginUser(String email, String password) async {
+//   final error = await AuthenticationRepository.instance.loginUserWithEmailAndPassword(email, password);
+//   if (error != null) {
+//     Get.showSnackbar(GetSnackBar(
+//       message: error.toString(),
+//     ));
+//   }
+// }
+
+
+
+
+
+
+
