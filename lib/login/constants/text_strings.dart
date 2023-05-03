@@ -42,4 +42,4 @@ const String tMenu3 = "User Management";
 
 const String tDelete = "Delete";
 const String tJoined = "Joined ";
-const String tJoinedAt = "31 October 2022";
+const String tJoinedAt = "2 May 2023";
