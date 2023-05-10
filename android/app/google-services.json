@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1092940118170",
+    "project_id": "icttiktokg7",
+    "storage_bucket": "icttiktokg7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092940118170:android:57f0f491981af176b54723",
+        "android_client_info": {
+          "package_name": "com.example.tiktok_debut"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092940118170-gagfbvg8qf1v5rhaslvbbrd2ldaka7ua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl0ZcJmc8bXi_4JpnpqkByHu3y6HagIJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1092940118170-gagfbvg8qf1v5rhaslvbbrd2ldaka7ua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
