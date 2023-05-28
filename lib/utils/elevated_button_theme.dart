@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:tiktok_debut/constants/sizes.dart';
 
-import '../login/constants/colors.dart';
-import '../login/constants/sizes.dart';
+import '../constants/colors.dart';
 
 class TElevatedButtonTheme {
   TElevatedButtonTheme._();

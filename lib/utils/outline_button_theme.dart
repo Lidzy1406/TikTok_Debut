@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../login/constants/colors.dart';
-import '../login/constants/sizes.dart';
+import '../constants/colors.dart';
+import '../constants/sizes.dart';
+
 
 class TOutlinedButtonTheme {
   TOutlinedButtonTheme._();

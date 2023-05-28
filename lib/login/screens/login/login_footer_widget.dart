@@ -17,15 +17,15 @@ class LoginFooterWidget extends StatelessWidget{
     return Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  const Text("OR"),
-                  SizedBox(
-                    width: double.infinity,
-                    child: OutlinedButton.icon(
-                       onPressed: null, 
-                       icon: Image(image: AssetImage(tGooglelogoImage), width: 20.0,),
-                       label: Text(tSignInWithGoogle.toUpperCase()),
-                    ),
-                  ),
+                  // const Text("OR"),
+                  // SizedBox(
+                  //   width: double.infinity,
+                  //   child: OutlinedButton.icon(
+                  //      onPressed: null, 
+                  //      icon: Image(image: AssetImage(tGooglelogoImage), width: 20.0,),
+                  //      label: Text(tSignInWithGoogle.toUpperCase()),
+                  //   ),
+                  // ),
                   const SizedBox(
                     height: tFormHeight - 20,
                   ),

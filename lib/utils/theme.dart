@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:tiktok_clone/utils/text_field_theme.dart';
-import 'package:tiktok_clone/utils/text_theme.dart';
-import 'package:tiktok_clone/utils/elevated_button_theme.dart';
-import 'package:tiktok_clone/utils/outline_button_theme.dart';
+import 'package:tiktok_debut/utils/text_field_theme.dart';
+import 'package:tiktok_debut/utils/text_theme.dart';
+import 'elevated_button_theme.dart';
+import 'outline_button_theme.dart';
 
 class TAppTheme {
   TAppTheme._();

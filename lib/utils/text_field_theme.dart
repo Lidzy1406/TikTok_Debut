@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../login/constants/colors.dart';
+import '../constants/colors.dart';
 
 class TextFormFieldTheme {
   TextFormFieldTheme._();
